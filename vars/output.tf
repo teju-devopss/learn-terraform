@@ -3,7 +3,7 @@ output "v1" {
     }
 
 output "v2" {
-    value = element(var.v2[4])
+    value = element(var.v2, 4)
     }
 
 output "v3" {
