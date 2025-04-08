@@ -13,6 +13,6 @@ output "v3" {
 # when you have not defined key (abc1) in variable but you dont want to fail the output you will give lookup so it will take some default value
 
 output "fruits" {
-    value =("fruits - quantity - ${var.fruits[apple][quantity]}")
+    value =("fruits - quantity - ${"var.fruits[apple][quantity]"}")
     }
 # when the variable is called inside the string we will define it in ${}
