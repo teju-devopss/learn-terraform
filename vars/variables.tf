@@ -12,3 +12,16 @@ variable "v3" {
         xyz = "five hundred"
         }
     }
+
+variable "fruits"{
+    default = {
+        apple = {
+            price    = 5
+            quantity = 100
+            }
+        banana ={
+            price = 20
+            quantity = 50
+            }
+        }
+    }
