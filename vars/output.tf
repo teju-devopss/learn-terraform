@@ -7,5 +7,5 @@ output "v2" {
     }
 
 output "v3" {
-    value = var.v3["abc"]
+    value = lookup(var.v3 ,"abc1","none")
     }
