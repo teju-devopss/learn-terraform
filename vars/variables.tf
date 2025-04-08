@@ -25,3 +25,6 @@ variable "fruits"{
             }
         }
     }
+variable "v4" {
+    default = " I am learning terraform"
+}

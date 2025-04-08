@@ -16,3 +16,7 @@ output "fruits" {
     value =("fruits - quantity - ${var.fruits["apple"]["quantity"]}")
     }
 # when the variable is called inside the string we will define it in ${}
+
+output "v4" {
+    value = var.v4
+}
