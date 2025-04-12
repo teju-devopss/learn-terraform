@@ -27,3 +27,4 @@ resource "aws_instance" "mysql" {
     Name = "mysql-dev"
   }
 }
+
