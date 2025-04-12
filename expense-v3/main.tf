@@ -8,7 +8,7 @@ resource "aws_instance" "instances" {
     Name                 = element(var.components,count.index)
   }
 }
-resource "aws_route53_record" "frontend" {
+resource "aws_route53_record" "records" {
   count                  = length(var.components)
   zone_id                = var.zone_id
   name                   = "${element(var.components,count.index)}-dev"
