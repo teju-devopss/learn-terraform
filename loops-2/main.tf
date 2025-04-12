@@ -4,6 +4,7 @@ variable "fruits1" {
     quantity = 20
   }
 }
+
 variable "fruits2" {
   default = {
 
@@ -22,6 +23,6 @@ variable "fruits2" {
 resource "null_resource" "test1" {
   for_each = var.fruits1
   provisioner "local-exec" {
-    command = "echo-${each.key} = ${each.value}"
+    command = "echo ${each.key} = ${each.value}"
   }
 }
