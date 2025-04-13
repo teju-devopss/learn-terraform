@@ -1,1 +1,1 @@
-test="Hello World -PROD"
+test = "Hello World -PROD"
