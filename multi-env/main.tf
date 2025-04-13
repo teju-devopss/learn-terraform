@@ -4,7 +4,7 @@ terraform {
 
 resource "null_resource" "devops" {}
 
-output "devops" {
+output "devops-variable-output-is" {
   value = var.devops
 }
 
