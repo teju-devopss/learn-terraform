@@ -5,6 +5,6 @@ terraform {
 resource "null_resource" "devops" {}
 
 output "devops" {
-  value = "var.test"
+  value = var.devops
 }
 
