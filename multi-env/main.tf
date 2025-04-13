@@ -2,9 +2,9 @@ terraform {
   backend "s3" {}
 }
 
-resource "null_resource" "test" {}
+resource "null_resource" "devops" {}
 
-output "test" {
+output "devops" {
   value = "var.test"
 }
 
