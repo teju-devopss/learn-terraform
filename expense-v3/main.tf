@@ -17,3 +17,10 @@ resource "aws_route53_record" "records" {
   records                = [element(aws_instance.instances.*.private_ip,count.index )]
 }
 
+
+# output "Second_Value_in_List" {
+#   value = var.v2[1]
+# }
+# output "Second_Value_in_List1" {
+#   value = element(var.v2, 4)
+# }
